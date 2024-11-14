@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+       Рок группы
+    </title>
+</head>
+<body background="C:\html\bg.jpg" text="white">
+    <p><a href="ex3.3.html" target="_self"> <input type="button" value="Самая популярная рок группа"></a></p>
+    <p><a href="ex3.1.html" target="_self"> <input type="button" value="На главную"></a></p>
+
+    <details>
+        <summary> График </summary>
+        <table cellspacing="20">
+            <tr>
+                <td>Значение по оси ОХ</td>
+                <td>Результат</td>
+            </tr>
+            <tr>
+                <td>
+                    <form>
+                        <input type="radio" name="val_1" value="genre"> Жанр <br>
+                        <input type="radio" name="val_1" value="cuntry"> Страна <br>
+                        <input type="radio" name="val_1" value="year"> Год
+                    </form>
+                </td>
+
+                <td>
+                    <input type="checkbox" name="val_2" value="genre"> Жанр <br>
+                    <input type="checkbox" name="val_2" value="cuntry"> Страна <br>
+                    <input type="checkbox" name="val_2" value="year"> Год
+                </td>
+            </tr>
+        </table>
+        <input type="button" value="Построить">
+        <p>
+            здесь будет график
+        </p>
+
+    </details>
+    <br>
+
+    <details>
+        <summary> Фильтр </summary>
+        <p>
+            <form>
+                Название:
+                <input type="text">
+            </form>
+        </p>
+
+        <p>
+            <form>
+                Жанр:
+                <input type="text">
+            </form>
+        </p>
+
+        <p>
+            <form>
+                Страна:
+                <input type="text">
+            </form>
+        </p>
+
+        <p>
+            <form>
+                Год: от
+                <input type="text">
+                до
+                <input type="text">
+            </form>
+        </p>
+        <p>
+            <form>
+                Прослушивания: от
+                <input type="text">
+                до
+                <input type="text">
+            </form>
+        </p>
+
+        <input type="button" value="Найти">
+    </details>
+    <br>
+
+    <details>
+        <summary> Сортировка </summary>
+        <p>
+            <form>
+                Первый уровень:
+                <select name="level">
+                    <option value_1="0"> Да </option>
+                    <option value_1="1" selected> Нет </option>
+                </select>
+                по убыванию?
+                <input type="checkbox" name="decreasing_1">
+            </form>
+        </p>
+
+        <p>
+            <form>
+                Второй уровень:
+                <select name="level">
+                    <option value_2="0"> Да </option>
+                    <option value_2="1" selected> Нет </option>
+                </select>
+                по убыванию?
+                <input type="checkbox" name="decreasing_2">
+            </form>
+        </p>
+
+        <p>
+            <form>
+                Третий уровень:
+                <select name="level">
+                    <option value_3="0"> Да </option>
+                    <option value_3="1" selected> Нет </option>
+                </select>
+                по убыванию?
+                <input type="checkbox" name="decreasing_3">
+            </form>
+        </p>
+
+        <input type="button" value="Сортировать">
+    </details>
+
+    <table border="1px" cellspacing="4px" cellpadding="3px">
+        <thead>
+            <tr>
+                <th>Название группы</th>
+                <th>Страна</th>
+                <th>Год основания</th>
+                <th>Основной жанр</th>
+                <th>Самая популярная песня</th>
+                <th>Последняя песня</th>
+                <th>Средняя длительность песен</th>
+                <th>Прослушивания</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Queen</td>
+                <td>Великобритания</td>
+                <td>1970</td>
+                <td>Рок</td>
+                <td>Bohemian Rhapsody</td>
+                <td>The Show Must Go On</td>
+                <td>4:00</td>
+                <td>100 млн</td>
+            </tr>
+            <tr>
+                <td>The Beatles</td>
+                <td>Великобритания</td>
+                <td>1960</td>
+                <td>Рок</td>
+                <td>Hey Jude</td>
+                <td>Let It Be</td>
+                <td>3:00</td>
+                <td>150 млн</td>
+            </tr>
+            <tr>
+                <td>Led Zeppelin</td>
+                <td>Великобритания</td>
+                <td>1968</td>
+                <td>Hard Rock</td>
+                <td>Stairway to Heaven</td>
+                <td>In the Evening</td>
+                <td>5:00</td>
+                <td>80 млн</td>
+            </tr>
+            <tr>
+                <td>The Rolling Stones</td>
+                <td>Великобритания</td>
+                <td>1962</td>
+                <td>Рок</td>
+                <td>Satisfaction</td>
+                <td>Living in a Ghost Town</td>
+                <td>3:30</td>
+                <td>120 млн</td>
+            </tr>
+            <tr>
+                <td>Pink Floyd</td>
+                <td>Великобритания</td>
+                <td>1965</td>
+                <td>Прогрессивный рок</td>
+                <td>Another Brick in the Wall, Part 2</td>
+                <td>High Hopes</td>
+                <td>7:00</td>
+                <td>70 млн</td>
+            </tr>
+            <tr>
+                <td>U2</td>
+                <td>Ирландия</td>
+                <td>1976</td>
+                <td>Рок</td>
+                <td>With or Without You</td>
+                <td>Get Out of Your Own Way</td>
+                <td>4:30</td>
+                <td>60 млн</td>
+            </tr>
+            <tr>
+                <td>Nirvana</td>
+                <td>США</td>
+                <td>1987</td>
+                <td>Гранж</td>
+                <td>Smells Like Teen Spirit</td>
+                <td>You Know You're Right</td>
+                <td>3:00</td>
+                <td>100 млн</td>
+            </tr>
+            <tr>
+                <td>Metallica</td>
+                <td>США</td>
+                <td>1981</td>
+                <td>Тяжелый металл</td>
+                <td>Enter Sandman</td>
+                <td>Lux Æterna</td>
+                <td>5:00</td>
+                <td>90 млн</td>
+            </tr>
+            <tr>
+                <td>Radiohead</td>
+                <td>Великобритания</td>
+                <td>1985</td>
+                <td>Альтернативный рок</td>
+                <td>Paranoid Android</td>
+                <td>There There</td>
+                <td>5:00</td>
+                <td>50 млн</td>
+            </tr>
+            <tr>
+                <td>Red Hot Chili Peppers</td>
+                <td>США</td>
+                <td>1983</td>
+                <td>Фанк-рок</td>
+                <td>Californication</td>
+                <td>Black Summer</td>
+                <td>4:30</td>
+                <td>70 млн</td>
+            </tr>
+            <tr>
+                <td>Guns N' Roses</td>
+                <td>США</td>
+                <td>1985</td>
+                <td>Хард-рок</td>
+                <td>Sweet Child o' Mine</td>
+                <td>Absurd</td>
+                <td>5:00</td>
+                <td>80 млн</td>
+            </tr>
+            <tr>
+                <td>The Doors</td>
+                <td>США</td>
+                <td>1965</td>
+                <td>Психоделический рок</td>
+                <td>Light My Fire</td>
+                <td>The End</td>
+                <td>4:00</td>
+                <td>50 млн</td>
+            </tr>
+            <tr>
+                <td>AC/DC</td>
+                <td>Австралия</td>
+                <td>1973</td>
+                <td>Хард-рок</td>
+                <td>Highway to Hell</td>
+                <td>Shot in the Dark</td>
+                <td>4:00</td>
+                <td>100 млн</td>
+            </tr>
+            <tr>
+                <td>Aerosmith</td>
+                <td>США</td>
+                <td>1970</td>
+                <td>Хард-рок</td>
+                <td>Walk This Way</td>
+                <td>Living on the Edge</td>
+                <td>4:00</td>
+                <td>70 млн</td>
+            </tr>
+            <tr>
+                <td>Green Day</td>
+                <td>США</td>
+                <td>1987</td>
+                <td>Панк-рок</td>
+                <td>When I Come Around</td>
+                <td>Father of All...</td>
+                <td>3:30</td>
+                <td>90 млн</td>
+            </tr>
+            <tr>
+                <td>The Cure</td>
+                <td>Великобритания</td>
+                <td>1976</td>
+                <td>Готическая рок</td>
+                <td>Friday I'm in Love</td>
+                <td>A Letter to Elise</td>
+                <td>4:30</td>
+                <td>50 млн</td>
+            </tr>
+            <tr>
+                <td>Foo Fighters</td>
+                <td>США</td>
+                <td>1994</td>
+                <td>Альтернативный рок</td>
+                <td>Everlong</td>
+                <td>Shame Shame</td>
+                <td>4:00</td>
+                <td>60 млн</td>
+            </tr>
+            <tr>
+                <td>Pearl Jam</td>
+                <td>США</td>
+                <td>1990</td>
+                <td>Гранж</td>
+                <td>Jeremy</td>
+                <td>Superblood Wolfmoon</td>
+                <td>4:30</td>
+                <td>50 млн</td>
+            </tr>
+            <tr>
+                <td>The Who</td>
+                <td>Великобритания</td>
+                <td>1964</td>
+                <td>Рок</td>
+                <td>Baba O'Riley</td>
+                <td>Who Are You</td>
+                <td>4:00</td>
+                <td>70 млн</td>
+            </tr>
+            <tr>
+                <td>Ramones</td>
+                <td>США</td>
+                <td>1974</td>
+                <td>Панк-рок</td>
+                <td>Blitzkrieg Bop</td>
+                <td>I Wanna Be Sedated</td>
+                <td>2:30</td>
+                <td>40 млн</td>
+            </tr>
+            <tr>
+                <td>R.E.M.</td>
+                <td>США</td>
+                <td>1980</td>
+                <td>Альтернативный рок</td>
+                <td>Losing My Religion</td>
+                <td>Leaving New York</td>
+                <td>4:00</td>
+                <td>40 млн</td>
+            </tr>
+            <tr>
+                <td>Van Halen</td>
+                <td>США</td>
+                <td>1972</td>
+                <td>Хард-рок</td>
+                <td>Jump</td>
+                <td>Distance</td>
+                <td>4:00</td>
+                <td>60 млн</td>
+            </tr>
+            <tr>
+                <td>The Police</td>
+                <td>Великобритания</td>
+                <td>1977</td>
+                <td>Поп-рок</td>
+                <td>Every Breath You Take</td>
+                <td>Invisible Sun</td>
+                <td>4:00</td>
+                <td>80 млн</td>
+            </tr>
+            <tr>
+                <td>Bon Jovi</td>
+                <td>США</td>
+                <td>1983</td>
+                <td>Хард-рок</td>
+                <td>Livin' on a Prayer</td>
+                <td>Do What You Can</td>
+                <td>4:00</td>
+                <td>90 млн</td>
+            </tr>
+            <tr>
+                <td>The Killers</td>
+                <td>США</td>
+                <td>2001</td>
+                <td>Альтернативный рок</td>
+                <td>Mr. Brightside</td>
+                <td>Caution</td>
+                <td>4:30</td>
+                <td>50 млн</td>
+            </tr>
+            <tr>
+                <td>Muse</td>
+                <td>Великобритания</td>
+                <td>1994</td>
+                <td>Альтернативный рок</td>
+                <td>Uprising</td>
+                <td>Will of the People</td>
+                <td>4:00</td>
+                <td>60 млн</td>
+            </tr>
+            <tr>
+                <td>Coldplay</td>
+                <td>Великобритания</td>
+                <td>1996</td>
+                <td>Альтернативный рок</td>
+                <td>Yellow</td>
+                <td>Higher Power</td>
+                <td>4:00</td>
+                <td>70 млн</td>
+            </tr>
+            <tr>
+                <td>Red Hot Chili Peppers</td>
+                <td>США</td>
+                <td>1983</td>
+                <td>Фанк-рок</td>
+                <td>Californication</td>
+                <td>Black Summer</td>
+                <td>4:30</td>
+                <td>70 млн</td>
+            </tr>
+            <tr>
+                <td>Linkin Park</td>
+                <td>США</td>
+                <td>1996</td>
+                <td>Альтернативный металл</td>
+                <td>In the End</td>
+                <td>Lost in the Echo</td>
+                <td>3:30</td>
+                <td>60 млн</td>
+            </tr>
+            <tr>
+                <td>Green Day</td>
+                <td>США</td>
+                <td>1987</td>
+                <td>Панк-рок</td>
+                <td>When I Come Around</td>
+                <td>Father of All...</td>
+                <td>3:30</td>
+                <td>90 млн</td>
+            </tr>
+            <tr>
+                <td>Foo Fighters</td>
+                <td>США</td>
+                <td>1994</td>
+                <td>Альтернативный рок</td>
+                <td>Everlong</td>
+                <td>Shame Shame</td>
+                <td>4:00</td>
+                <td>60 млн</td>
+            </tr>
+            <tr>
+                <td>The Offspring</td>
+                <td>США</td>
+                <td>1984</td>
+                <td>Панк-рок</td>
+                <td>Come Out and Play</td>
+                <td>Let the Bad Times Roll</td>
+                <td>3:00</td>
+                <td>50 млн</td>
+            </tr>
+            <tr>
+                <td>System of a Down</td>
+                <td>США</td>
+                <td>1994</td>
+                <td>Альтернативный металл</td>
+                <td>Chop Suey!</td>
+                <td>Protect the Land</td>
+                <td>3:30</td>
+                <td>40 млн</td>
+            </tr>
+            <tr>
+                <td>My Chemical Romance</td>
+                <td>США</td>
+                <td>2001</td>
+                <td>Эмо</td>
+                <td>Welcome to the Black Parade</td>
+                <td>The Foundations of Decay</td>
+                <td>4:30</td>
+                <td>50 млн</td>
+            </tr>
+            <tr>
+                <td>Fall Out Boy</td>
+                <td>США</td>
+                <td>2001</td>
+                <td>Поп-панк</td>
+                <td>Sugar, We're Goin Down</td>
+                <td>The Last One</td>
+                <td>3:30</td>
+                <td>40 млн</td>
+            </tr>
+            <tr>
+                <td>Paramore</td>
+                <td>США</td>
+                <td>2004</td>
+                <td>Поп-панк</td>
+                <td>Misery Business</td>
+                <td>This Is Why</td>
+                <td>3:30</td>
+                <td>40 млн</td>
+            </tr>
+            <tr>
+                <td>Panic! At The Disco</td>
+                <td>США</td>
+                <td>2004</td>
+                <td>Поп-панк</td>
+                <td>I Write Sins Not Tragedies</td>
+                <td>Viva Las Vengeance</td>
+                <td>3:30</td>
+                <td>40 млн</td>
+            </tr>
+            <tr>
+                <td>Twenty One Pilots</td>
+                <td>США</td>
+                <td>2009</td>
+                <td>Альтернативный рок</td>
+                <td>Stressed Out</td>
+                <td>Saturday</td>
+                <td>3:30</td>
+                <td>50 млн</td>
+            </tr>
+            <tr>
+                <td>Imagine Dragons</td>
+                <td>США</td>
+                <td>2008</td>
+                <td>Альтернативный рок</td>
+                <td>Radioactive</td>
+                <td>Symphony</td>
+                <td>4:00</td>
+                <td>60 млн</td>
+            </tr>
+            <tr>
+                <td>The 1975</td>
+                <td>Великобритания</td>
+                <td>2002</td>
+                <td>Инди-рок</td>
+                <td>Chocolate</td>
+                <td>Happiness</td>
+                <td>4:00</td>
+                <td>40 млн</td>
+            </tr>
+            <tr>
+                <td>Arctic Monkeys</td>
+                <td>Великобритания</td>
+                <td>2003</td>
+                <td>Инди-рок</td>
+                <td>I Bet You Look Good on the Dancefloor</td>
+                <td>Body Paint</td>
+                <td>3:30</td>
+                <td>50 млн</td>
+            </tr>
+            <tr>
+                <td>Kings of Leon</td>
+                <td>США</td>
+                <td>1999</td>
+                <td>Рок</td>
+                <td>Sex on Fire</td>
+                <td>Time in Disguise</td>
+                <td>4:00</td>
+                <td>40 млн</td>
+            </tr>
+            <tr>
+                <td>The Black Keys</td>
+                <td>США</td>
+                <td>2001</td>
+                <td>Блюз-рок</td>
+                <td>Lonely Boy</td>
+                <td>Wild Child</td>
+                <td>4:00</td>
+                <td>40 млн</td>
+            </tr>
+            <tr>
+                <td>Jack White</td>
+                <td>США</td>
+                <td>2001</td>
+                <td>Рок</td>
+                <td>Seven Nation Army</td>
+                <td>Taking Me Back</td>
+                <td>3:30</td>
+                <td>40 млн</td>
+            </tr>
+            <tr>
+                <td>Florence + The Machine</td>
+                <td>Великобритания</td>
+                <td>2007</td>
+                <td>Инди-рок</td>
+                <td>Dog Days Are Over</td>
+                <td>King</td>
+                <td>4:30</td>
+                <td>40 млн</td>
+            </tr>
+            <tr>
+                <td>The Lumineers</td>
+                <td>США</td>
+                <td>2005</td>
+                <td>Инди-фолк</td>
+                <td>Ho Hey</td>
+                <td>Brightside</td>
+                <td>4:00</td>
+                <td>40 млн</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+</body>
+</html>
